@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url("http://nicholastodor.com/sf/usesf.css");
+
+body{
+	color: black;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 100;
+}
+h1{
+	font-size: 36px;
+}
+h3{
+	font-size: 20px;
+}
+.title{
+	text-align: center;
+	margin-top: 37px;
+}
+h1, h2, h3{
+	color: #333;
+	letter-spacing: 1px;
+}
+.userInfo{
+	float: right;
+	position: relative;
+	margin-right: 30%;
+	margin-top: 5%;
+}
+.sneakerPic{
+	width: 350px;
+	height:250px;
+	margin-left: 23%;
+	margin-top: 30px;
+	position: relative;
+	border: 15px solid #ccc;
+}
+.desc{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 35px;
+	font-weight: 100;
+	font-family: 'Roboto Slab', serif;
+	color: black;
+}
+.center{
+	text-align: center;
+}
+.contactInfo{
+	margin-top: 20px;
+	padding-bottom: 30px;
+}
+button{
+	border: none;
+	width: 100px;
+	height: 30px;
+	margin-top: 20px;
+	color: white;
+	background-color: #1ce;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 100;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+
+button:hover{
+	background-color: transparent;
+	border: 1px solid #1ce;
+	color: #1ce;
+}
+/*#galleryBox{
+	background-color: #ccc;
+	height: 270px;
+	width: 370px;
+	margin-left: 22%;
+	position: relative;
+}
+*/
+label{
+	float: left;
+	letter-spacing: 1px;
+	font-size: 24px;
+	margin-top: 10px;
+}
+form{
+	margin-left: 35%;
+	margin-top: 5%;
+}
+input{
+	height: 25px;
+	margin-top: 9px;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 20px
+}
+.registerTitle{
+	font-family: "Oswald", sans-serif;
+	color: black;
+	text-align: center;
+	margin-top: 90px;
+}
+.submit{
+	border: none;
+	color: white;
+	background-color: #1ce;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 100;
+	font-size: 24px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	width: 90px;
+	height: 30px;
+}
+.submit:hover{
+	background-color: transparent;
+	color: #1ce;
+	border: 1px solid #1ce;
+}
+.subHeader{
+	margin-top: 20px;
+}
+#logInBox{
+	background-color: lightgrey;
+	height: 350px;
+	width: 450px;
+	margin: auto;
+	margin-top: 150px;
+	padding-top: 15px;
+	text-align: center;
+}
+.login{
+	padding-left: 20px;
+	margin-top: 40px;
+}
+.topSpace{
+	margin-top: 30px;
+}
+
+
