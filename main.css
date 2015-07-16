@@ -182,5 +182,88 @@ input{
 .topSpace{
 	margin-top: 30px;
 }
+.navbarli{
+	font-size: 26px;
+	display: inline-block;
+	text-align: center;
 
-
+}
+.navbarul{
+	width: 100%;
+	position: sticky;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid white;
+}
+.rightLi{
+	margin-left: 10%;
+}
+.leftLi{
+	margin-right: 10%;
+}
+nav .brand{
+	display: inline-block;
+	font-weight: 500;
+	color: white;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:visited{
+	color: white;
+}
+#navbar{
+	background-color: rgba(10,10,10,.6);
+}
+#home{
+	background-color: #f4f4f4;
+}
+#indexBg{
+	background-image: url("http://40.media.tumblr.com/655141a4d650fe206eb22e2fe5b1a852/tumblr_nmpbcqKfzL1r92k5yo1_1280.jpg");
+	background-size: cover !important;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/*.div-wrapper {
+    position: relative;
+}
+.div-wrapper img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}*/
+#centerText{
+	color: white;
+	text-align: center;
+	font-size: 36px;
+	font-family: "Oswald", sans-serif;
+	margin-top: 40px;
+	z-index: 1;
+	position: relative;
+	font-weight: 700;
+}
+.brand{
+	font-family: "Oswald", sans-serif;
+	color: #1ce;
+}
+.hero{
+	width: 25%;
+	height: 25%;
+	margin: auto;
+	margin-top: 130px;
+	background-color: rgba(10,10,10,.4);
+	padding-top: 1px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#centerText2{
+	font-size: 24px;
+	font-weight: 100;
+	color: white;
+	font-family: "Helvetica Neue", sans-serif;
+	text-align: center;
+	margin-top: 20px;
+}
