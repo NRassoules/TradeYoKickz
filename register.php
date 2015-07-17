@@ -3,6 +3,7 @@
 <head> 
 	<title>TradeYoKickz : Register</title>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100,200' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
@@ -21,6 +22,8 @@
 		<label for="number">Phone Number: +1- </label><input name="phone" />
 		<br>
 		<label for="username">Username: </label><input name="username" />
+		<br>
+		<label for="username">Password: </label><input name="password" />
 		<br>
 		<input type="submit" value="Submit" class="submit" />
 	</form>
