@@ -70,8 +70,8 @@
 				      <input type="checkbox"> Contact me via text.
 				    </label>
 				 </div>
-				<button class="registerButton" style="font-size:18px;margin-top:10px;">Submit</button>
-				<button class="registerButton" style="font-size:18px;margin-top:10px;">Save</button>
+				<button class="registerButton" style="font-size:18px;margin-top:10px;margin-bottom:20px;">Submit</button>
+				<button class="registerButton" style="font-size:18px;margin-top:10px;margin-bottome:20px;">Save</button>
 			</form>
 		</div>
 	</div>
