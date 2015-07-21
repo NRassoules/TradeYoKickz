@@ -10,7 +10,7 @@
 	?>
 	<section id="bg3"></section>
 	<div class="well registerWell">
-		<form>
+		<form action="register_action.php">
 		  <div class="form-group">
 		    <label for="fName">First Name</label>
 		    <span class="glyphicon glyphicon-user"></span><input type="text" class="form-control" placeholder="John">
