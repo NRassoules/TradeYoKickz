@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>`
+	<title>TradeYoKickz</title>
+	<?php include 'links.php'; ?>
+</head>
+<body>
+	<div class="container">
+	<?php
+		include "navbar.php";
+
+		$dsn = 'mysql:dbname=tradeyokickz_db;host=localhost;port=3306';
+		$username = 'root';
+		$password = 'ps138@school.com';
+		try {
+		    $db = new PDO($dsn, $username, $password); // also allows an extra parameter of configuration
+		} catch(PDOException $e) {
+		    die('Could not connect to the database:<br/>' . $e);
+		}
+		$sql = "SELECT * FROM sell_post_info";
+		$statement = $db->query($sql);
+		$statement->execute();
+		$result = $statement->fetchAll();
+		//var_dump($result);
+
+
+		?>
+		<table class="table table-hover">
+				<th>Title</th>
+				<th>Price</th>
+				<th>Size</th>
+				<th>City</th>
+				<th>State</th>
+				<th>Country</th>
+		<?php 
+			foreach ($result as $post) {  ?>
+			<tr>
+				<td><?= $post['title'] ?></td>
+				<td>$<?= $post['price'] ?></td>
+				<td><?= $post['size'] ?></td>
+				<td><?= $post['city'] ?></td>
+				<td><?= $post['state'] ?></td>
+				<td><?= $post['country'] ?></td>
+			</tr>
+			<?php
+			}
+		?>
+		</table>
+	
+</body>
+</html>

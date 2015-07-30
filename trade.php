@@ -10,6 +10,7 @@
 	<?php 
 		include "navbar.php";
 	?>
+	<section id="bg"></section>
 	<div class="well tradeWell">
 		<div class="container-fluid">
 			<p>Are you here to look for trades?</p>

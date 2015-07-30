@@ -21,7 +21,7 @@
 	?>
 	<section id="bg"></section>
 	<div class="jumbotron">
-		<h1 class="jumbotronText">Become A FlyGuy With <span class="red">TYK!</span></h1>
+		<h1 class="jumbotronText">Rock The Flyest Kicks With <span class="red">TYK!</span></h1>
 		<p class="jumbotronSubHeader">With TYK you can trade, sell, and buy used and deadstock sneakers.</p>
 		<p><a href="register.php"><button class="registerButton" style="background-color: #ec3724;">Register</button></a></p>
 	</div>
