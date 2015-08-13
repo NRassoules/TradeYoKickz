@@ -8,7 +8,7 @@
 </head>
 <body>
 	<?php
-		
+		include "Db.php";
 		$fName = $_POST["fName"];
 		$lName = $_POST["lName"];
 		$user = $_POST["username"];
@@ -16,15 +16,7 @@
 		$phone_number = $_POST["phone_number"];
 		$user_password = $_POST['password'];
 		$user_password = password_hash($user_password, PASSWORD_DEFAULT);
-
-		$dsn = 'mysql:dbname=tradeyokickz_db;host=localhost;port=3306';
-		$username = 'root';
-		$password = 'ps138@school.com';
-		try {
-		    $db = new PDO($dsn, $username, $password); // also allows an extra parameter of configuration
-		} catch(PDOException $e) {
-		    die('Could not connect to the database:<br/>' . $e);
-		}
+		$db = Db::pdo();
 		$add_to_table_user_details = $db->prepare("INSERT INTO user_details VALUES(:fName,:lName,:username,:email,:phone_number,:user_password)");
 		if (empty($fName) or empty($lName) or empty($user) or empty($email) or empty($phone_number)) { ?>
 

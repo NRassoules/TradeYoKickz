@@ -1,6 +1,9 @@
-CREATE TABLE user_details
+CREATE TABLE trade_post_info
 (
-username VARCHAR(20),
-rating tinyint(100),
-location VARCHAR(128)
+title VARCHAR(80),
+want VARCHAR(255),
+size tinyint(20),
+city VARCHAR(128),
+state VARCHAR(128),
+country VARCHAR(128)
 );

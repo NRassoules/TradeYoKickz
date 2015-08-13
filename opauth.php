@@ -1,31 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<?php	
-	define('CONF_FILE', dirname(__FILE__).'/opauth/lib/Opauth/'.'opauth.conf.php');
-
-	if (!file_exists(CONF_FILE)) {
-		trigger_error('Config file missing at '.CONF_FILE, E_USER_ERROR);
-		exit();
-	}
-
-	require CONF_FILE;
-	require 'opauth/lib/Opauth/Opauth.php';
-	$Opauth = new Opauth( $config );
-
-?>
-
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
-
-<div id="status">
-</div>
-
-</script>
-</body>
-</html>
+<?php
+session_set_cookie_params(0, '/', '.TradeYoKickz.com');
+session_start();	
+define('CONF_FILE', dirname(__FILE__).'/opauth/opauth/lib/Opauth/'.'opauth.conf.php');
+define('OPAUTH_LIB_DIR', dirname(dirname(__FILE__)).'/TradeYoKickz/opauth/opauth/lib/Opauth/');
+/**
+* Load config
+*/
+if (!file_exists(CONF_FILE)) {
+	trigger_error('Config file missing at '.CONF_FILE, E_USER_ERROR);
+	exit();
+}
+require CONF_FILE;
+/**
+ * Instantiate Opauth with the loaded config
+ */
+require OPAUTH_LIB_DIR.'Opauth.php';
+$Opauth = new Opauth( $config );
 
 
