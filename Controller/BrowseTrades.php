@@ -1,6 +1,6 @@
 <?php 
 	require_once "/var/www/html/TradeYoKickz/autoload.php";
-	require_once '../../Db.php';
+	require_once $_SERVER['DOCUMENT_ROOT'] . '/Db.php';
 	require_once $_SERVER['DOCUMENT_ROOT'] .'/View/browse_trades.php';
 
 		
