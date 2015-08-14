@@ -10,6 +10,7 @@
 		$statement = $db->prepare("UPDATE user_details SET login_state = '0' WHERE id = '$id'");
 		$statement->execute();
 		session_unset();
+	header('Location: http://www.tradeyokickz.com/');
 		
 	
 	

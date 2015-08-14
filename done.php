@@ -90,7 +90,7 @@ else{
 			$_SESSION['isLoggedIn'] = 'true';
 			$_SESSION['email'] = $email;
 			$_SESSION['name'] = $name;
-			header('Location: http://www.tradeyokickz.com/View/index.php');
+			header('Location: http://www.tradeyokickz.com/index.php');
 		 } else {
 			 	$dbc = Db::connect();
 				$query = "SELECT * FROM user_details WHERE id = '$id'";
@@ -118,11 +118,11 @@ else{
 					$_SESSION['id'] = $id;
 					$_SESSION['isLoggedIn'] = 'true';
 					$_SESSION['name'] = $name;
-					header('Location: http://www.tradeyokickz.com/View/index.php');
+					header('Location: http://www.tradeyokickz.com/index.php');
 		 		}
 		 	$_SESSION['isLoggedIn'] = 'true';
 		 	print_r($name);
-			header('Location: http://www.tradeyokickz.com/View/index.php');
+			header('Location: http://www.tradeyokickz.com/index.php');
 		 }
 		
 	}

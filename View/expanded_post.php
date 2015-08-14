@@ -7,13 +7,20 @@
 <body>
 	<?php
 		include "navbar.php";
-		$title = "Bordeaux 7s MINT condition!";
-		$price = 375;
-		$desc = "Bought them yesterday never worn willing to bargain.";
-		$size = 9.5;
-		$seller = "Jays4Life595";
-		$rating = 75;
-		$img2 = "http://sneakerbardetroit.com/wp-content/uploads/2014/12/air-jordan-7-vii-retro-2015-remastered-1.jpg";
+		require_once $_SERVER['DOCUMENT_ROOT'] . '/Db.php';
+		$id = $_GET['id'];
+		$db = Db::pdo();
+		$sql = "SELECT * FROM trade_post_info WHERE post_id = '$id'";
+		$statement = $db->query($sql);
+		$statement->execute();
+		$result = $statement->fetchAll();
+		
+		foreach ($result as $info){
+			echo "<pre>";
+			print_r($info);
+			echo "</pre>";
+		}
+
 	?>
 		<h1 class="oswald center" style="margin-top:40px;"><?= $title ?></h1>
 		<br>

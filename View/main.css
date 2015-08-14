@@ -283,8 +283,30 @@ th{
 table{
 	margin-top: 30px;
 }
-
-
+.profile{
+	margin-top: 30px;
+	background-color: rgba(50,50,50,.6);
+}
+.black{
+	color: #323232;
+}
+.profilePic{
+	width: 300px;
+	margin: 0 auto;
+	height: 250px;
+	padding: 10px,10px,10px,10px;
+}
+.resize{
+	width: 100%;
+	height: 100%;
+}
+.infoWell{
+	margin-top: 30px;
+	color: #333;
+}
+.white{
+	color: white;
+}
 
 
 

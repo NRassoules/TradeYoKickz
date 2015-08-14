@@ -17,7 +17,7 @@
 </head>
 <body>
 	<?php
-		include "navbar.php";
+		include $_SERVER['DOCUMENT_ROOT'] . "/View/navbar.php";
 	?>
 	<section id="bg"></section>
 	<div class="jumbotron">

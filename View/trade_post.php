@@ -71,15 +71,6 @@
 						<textarea rows="6" cols="80" name="desc" class="form-control desc" placeholder="Also willing to take .... My hare's are deadstock. Willing to add cash!"></textarea>
 					</div>
 				</div>
-				<div class="checkbox">
-				    <label class="small">
-				      <input type="checkbox"> Contact me via e-mail.
-				    </label>
-				    <Br>
-				    <label class="small">
-				      <input type="checkbox"> Contact me via text.
-				    </label>
-				 </div>
 				<button class="registerButton" style="font-size:18px;margin-top:10px;margin-bottom:20px;">Submit</button>
 				<button class="registerButton" style="font-size:18px;margin-top:10px;margin-bottome:20px;">Save</button>
 			</form>
