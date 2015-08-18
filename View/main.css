@@ -307,7 +307,19 @@ table{
 .white{
 	color: white;
 }
-
+.bigP{
+	font-size: 18px;
+}
+.red{
+	color: #ec3724;
+}
+.red:hover{
+	color: black;
+	text-decoration: none;
+}
+.profileTable{
+	margin-bottom: 0;
+}
 
 
 

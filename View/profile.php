@@ -41,13 +41,12 @@
 	$email = $_SESSION['email'];
 	$id = $_SESSION['id'];
 	$db = Db::pdo();
-	$sql = "SELECT * FROM trade_post_info WHERE email = '$email'";
+	$sql = "SELECT * FROM trade_post_details WHERE email = '$email'";
 	$statement = $db->query($sql);
 	$statement->execute();
 	$result = $statement->fetchAll();
+	echo '<div class="container" style="margin-bottom:30px;"><table class="table table-hover">';
 	foreach ($result as $post) { ?>
-				<div class='container' style="margin-bottom:30px;">
-					<table class="table table-hover">
 						<tr>
 							<td><?= $post['title'] ?></td>
 							<td><?= $post['want'] ?></td>
@@ -56,20 +55,16 @@
 							<td><?= $post['state'] ?></td>
 							<td><?= $post['country'] ?></td>
 						</tr>
-					</table>
-				</div>
-
 	<?php
 	}
-	?>
+	?></table></div>
 	<?php
-	$sql = "SELECT * FROM trade_post_info WHERE id = '$id'";
+	$sql = "SELECT * FROM trade_post_details WHERE id = '$id'";
 	$statement = $db->query($sql);
 	$statement->execute();
 	$result = $statement->fetchAll();
+	echo '<div class="container" style="margin-bottom:30px;"><table class="table table-hover">';
 	foreach ($result as $post) { ?>
-				<div class='container' style="margin-bottom:30px;">
-					<table class="table table-hover">
 						<tr>
 							<td><?= $post['title'] ?></td>
 							<td><?= $post['want'] ?></td>
@@ -78,12 +73,9 @@
 							<td><?= $post['state'] ?></td>
 							<td><?= $post['country'] ?></td>
 						</tr>
-					</table>
-				</div>
-   </div>
    <?php
 }
-   ?>
+   ?></table> </div>
    </body>
 </body>
 </html>

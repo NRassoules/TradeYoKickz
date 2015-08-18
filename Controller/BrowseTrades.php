@@ -13,13 +13,14 @@
 		$state = $_POST['state'];
 		$country = $_POST['country'];
 		$description = $_POST['desc'];
+		$img = $_POST['image'];
 		$postid = uniqid();
 		$emailPost = $_SESSION['email'];
 		$idPost = $_SESSION['id'];
 		if (is_null($_POST['title'])) {
-			
+		header('Location http://www.tradeyokickz.com/Controller/BrowseTrades.php');	
 		}else{
-		$add_to_trade_post_details = $db->prepare("INSERT INTO trade_post_info (title,want,size,city,state,country,email,id,post_id,description) VALUES (:title,:want,:size,:city,:state,:country,:email,:id,:post_id,:description)");
+		$add_to_trade_post_details = $db->prepare("INSERT INTO trade_post_details (title,want,size,city,state,country,email,id,post_id,description,image) VALUES (:title,:want,:size,:city,:state,:country,:email,:id,:post_id,:description,:image)");
 		$add_to_trade_post_details->execute(
 				[
 					':title' => $title,
@@ -31,11 +32,13 @@
 					':email' => $emailPost,
 					':id' => $idPost,
 					'post_id' => $postid,
-					':description' => $descrition
+					':description' => $description,
+					':image' => $img
 				]
 			);
+		
 		}
-		$sql = "SELECT * FROM trade_post_info";
+		$sql = "SELECT * FROM trade_post_details ORDER BY time DESC";
 		$statement = $db->query($sql);
 		$statement->execute();
 		$result = $statement->fetchAll();
@@ -52,7 +55,7 @@
 			foreach ($result as $post) { 
 			$post_id = $post['post_id']; ?>
 					<tr class="clickable-row">
-							<td><a href="http://www.tradeyokickz.com/View/expanded_post.php?id=<?= $post_id ?>"><?= $post['title'] ?></a></td>
+							<td><a class='red' href="http://www.tradeyokickz.com/View/expanded_post.php?id=<?= $post_id ?>"><?= $post['title'] ?></a></td>
 							<td><?= $post['want'] ?></td>
 							<td><?= $post['size'] ?></td>
 							<td><?= $post['city'] ?></td>

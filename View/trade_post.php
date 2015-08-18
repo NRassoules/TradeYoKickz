@@ -70,6 +70,10 @@
 						<label for="desc">Description:</label>
 						<textarea rows="6" cols="80" name="desc" class="form-control desc" placeholder="Also willing to take .... My hare's are deadstock. Willing to add cash!"></textarea>
 					</div>
+					<div class="form-group formPost">
+					<label for="image">Image Link:</label>
+					<input name="image" type="text" placeholder="http://4.kicksonfire.net/wp-content/uploads/2014/08/WillToothbrush.gif?642e0d" class="form-control" />
+				</div>
 				</div>
 				<button class="registerButton" style="font-size:18px;margin-top:10px;margin-bottom:20px;">Submit</button>
 				<button class="registerButton" style="font-size:18px;margin-top:10px;margin-bottome:20px;">Save</button>
