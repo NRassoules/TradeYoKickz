@@ -45,10 +45,11 @@
 	$statement = $db->query($sql);
 	$statement->execute();
 	$result = $statement->fetchAll();
+
 	echo '<div class="container" style="margin-bottom:30px;"><table class="table table-hover">';
-	foreach ($result as $post) { ?>
+	foreach ($result as $post) { $post_id = $post['post_id']; ?> 
 						<tr>
-							<td><?= $post['title'] ?></td>
+							<td><a class='red' href="http://www.tradeyokickz.com/View/expanded_post.php?id=<?= $post_id ?>"><?= $post['title'] ?></td>
 							<td><?= $post['want'] ?></td>
 							<td><?= $post['size'] ?></td>
 							<td><?= $post['city'] ?></td>
@@ -64,9 +65,9 @@
 	$statement->execute();
 	$result = $statement->fetchAll();
 	echo '<div class="container" style="margin-bottom:30px;"><table class="table table-hover">';
-	foreach ($result as $post) { ?>
-						<tr>
-							<td><?= $post['title'] ?></td>
+	foreach ($result as $post) { $post_id = $post['post_id']; ?>
+						<tr class="clickable-row">
+							<td><a class='red' href="http://www.tradeyokickz.com/View/expanded_post.php?id=<?= $post_id ?>"><?= $post['title'] ?></td>
 							<td><?= $post['want'] ?></td>
 							<td><?= $post['size'] ?></td>
 							<td><?= $post['city'] ?></td>

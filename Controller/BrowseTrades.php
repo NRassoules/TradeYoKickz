@@ -3,7 +3,11 @@
 	require_once "/var/www/html/TradeYoKickz/autoload.php";
 	require_once $_SERVER['DOCUMENT_ROOT'] . '/Db.php';
 	require_once $_SERVER['DOCUMENT_ROOT'] .'/View/browse_trades.php';
+	if (is_null($_SESSION['email'] or $_SESSION['id']) ) {
+		
+	}else{ ?>
 
+	<?php
 		
 		$db = Db::pdo();
 		$title = $_POST['title'];
@@ -36,7 +40,7 @@
 					':image' => $img
 				]
 			);
-		
+
 		}
 		$sql = "SELECT * FROM trade_post_details ORDER BY time DESC";
 		$statement = $db->query($sql);
@@ -66,5 +70,6 @@
 				
 			<?php
 			}
+		}
 		?>
 		</table>
